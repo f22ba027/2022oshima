@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>問題</title>
+    <script src="mondai.js"></script>
+    <style>
+        body {
+            font-family: serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>問題</h1>
+    <p>Q1,大島明道の学籍番号は？(半角小文字)</p>
+    入力<input id="in" type="text">
+    <input type="button" value="実行" onclick="mon()"><br>
+    結果<input id="out" type="text"><br>
+
+    <p>Q2,大島明道がやっていたスポーツは？</p>
+    <form id="quiz-1">
+        <input name="answer" type="radio" value="a">野球</input>
+        <input name="answer" type="radio" value="b">サッカー</input>
+        <input name="answer" type="radio" value="c">バスケ</input>
+    </form>
+    <button  type="button" onclick="asrQuiz1();">回答する</button>
+    <input id="out1" type="text"><br>
+
+    <p>Q3,大島明道が最近一番お金を使ったものは？</p>
+    <form id="quiz-2">
+        <input name="answer" type="radio" value="a">服＆靴</input>
+        <input name="answer" type="radio" value="b">PC周辺機器</input>
+        <input name="answer" type="radio" value="c">原神</input>
+    </form>
+    <button  type="button" onclick="asrQuiz2();">回答する</button>
+    <input id="out2" type="text"><br>
+
+    <p>Q4,大島明道が最近特にハマっていることは？</p>
+    <form id="quiz-3">
+        <input name="answer" type="radio" value="a">ポケモン色違い厳選</input>
+        <input name="answer" type="radio" value="b">筋トレ</input>
+        <input name="answer" type="radio" value="c">一人焼肉</input>
+    </form>
+    <button  type="button" onclick="asrQuiz3();">回答する</button>
+    <input id="out3" type="text"><br>
+    <a href="top.html">TOPに戻る</a>
+
+</body>
+</html>

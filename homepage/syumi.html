@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>趣味</title>
+    <style>
+        #photo{
+            display: flex;
+            justify-content: center;
+        }
+        #none{
+            list-style: none;
+        }
+        ul {
+            border: 2px solid #5dec5a;
+            padding: 14px 14px 14px 32px;
+        }
+    </style>
+</head>
+<body>
+    <h1>趣味</h1>
+    <h2>ゲーム</h2>
+    <p>いろいろなゲームを遊んでます。</p>
+    <ul>    
+        <P>最近やっているもの</P>
+        <li>valorant</li>  
+        <li>原神</li>
+        <li>ポケモン</li>
+        <p>前ハマっていたもの</p>
+        <li>overwatch</li>
+        <li>apex</li>
+        <li>fortnite</li>
+        <li>モンハン</li>
+        <li>minecraft</li>
+    </ul>
+    <img id="pic1" src="https://cdn.discordapp.com/attachments/718093346807087115/1072682767697051648/E0dnwykVkAE6VDY.jpg" width="400" height="200">
+    <br>
+    <input type="button" value="戻る" onclick="back1()">
+    <input type="button" value="進む" onclick="forward1()">
+    <script>
+        var pics1_src = new Array("https://cdn.discordapp.com/attachments/718093346807087115/1072682767944527965/FjSCW8aaAAAJVN6.jpg",
+        "https://cdn.discordapp.com/attachments/718093346807087115/1072682768179413132/Fchk4TfaQAENIoA.jpg",
+        "https://cdn.discordapp.com/attachments/718093346807087115/1072682768573673522/FORMCUdaUAMTdY6.jpg",
+        "https://cdn.discordapp.com/attachments/718093346807087115/1072682769156669621/Erco-iZU0AAx76n.jpg");
+            var num = 0;
+            function forward1(){
+                
+                if (num == 3) {
+                    num = 0;
+                }
+                else {
+                    num ++;
+                }
+                document.getElementById("pic1").src=pics1_src[num];
+            }
+ 
+            function back1(){
+                if (num == 0) {
+                    num = 3;
+                }
+                else {
+                    num --;
+                }
+                document.getElementById("pic1").src=pics1_src[num];
+            }
+
+    </script>
+            
+
+
+
+
+
+
+
+    <h2>食</h2>
+    <p>美味しいものを食べているときと好きなだけ寝れる日が一番幸せを感じます</p>
+    <h3>好きな食べ物</h3>
+    <ul>
+        <li>牛タン</li>
+        <li>寿司</li>
+        <li>ラーメン(味噌、二郎系)</li>
+        <li>蟹</li>
+        <li>ホルモン</li>
+    </ul>
+         
+    <img id="pic" src="https://cdn.discordapp.com/attachments/718093346807087115/1070588391982387230/IMG_2426.jpg" width="400" height="300">
+    <br>
+    <input type="button" value="戻る" onclick="back()">
+    <input type="button" value="進む" onclick="forward()">
+    <script>
+        var pics_src = new Array("https://cdn.discordapp.com/attachments/718093346807087115/1070588392330498069/IMG_2357.jpg",
+        "https://cdn.discordapp.com/attachments/718093346807087115/1070588392653471864/IMG_2364.jpg",
+        "https://cdn.discordapp.com/attachments/718093346807087115/1070588991335829566/IMG_2490.jpg");
+            var num = 0;
+            function forward(){
+                
+                if (num == 2) {
+                    num = 0;
+                }
+                else {
+                    num ++;
+                }
+                document.getElementById("pic").src=pics_src[num];
+            }
+ 
+            function back(){
+                if (num == 0) {
+                    num = 2;
+                }
+                else {
+                    num --;
+                }
+                document.getElementById("pic").src=pics_src[num];
+            }
+
+    </script><br>
+    <a href="top.html">TOPに戻る</a>
+</body>
+</html>
